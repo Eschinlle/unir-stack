@@ -1,7 +1,10 @@
 import os
 import secrets
 from typing import List
+from dotenv import load_dotenv
 
+# Cargar variables de entorno
+load_dotenv()
 
 def _bool_env(key, default: bool = False):
     val = os.getenv(key, str(default)).lower()
@@ -49,10 +52,10 @@ OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 ANTHROPIC_BASE_URL = os.getenv("ANTHROPIC_BASE_URL")
-FAST_PROVIDER = _enum_env("FAST_PROVIDER", ["openai", "anthropic"], default="anthropic")
-MAIN_PROVIDER = _enum_env("MAIN_PROVIDER", ["openai", "anthropic"], default="anthropic")
-FAST_MODEL = os.getenv("FAST_MODEL", "claude-3-5-haiku-20241022")
-MAIN_MODEL = os.getenv("MAIN_MODEL", "claude-3-7-sonnet-20250219")
+FAST_PROVIDER = _enum_env("FAST_PROVIDER", ["openai", "anthropic"], default="openai")
+MAIN_PROVIDER = _enum_env("MAIN_PROVIDER", ["openai", "anthropic"], default="openai")
+FAST_MODEL = os.getenv("FAST_MODEL", "gpt-4o")
+MAIN_MODEL = os.getenv("MAIN_MODEL", "gpt-4o")
 
 # Misc configuration
 RUN_PERIODIC_CLEANUP = _bool_env("RUN_PERIODIC_CLEANUP", default=True)
