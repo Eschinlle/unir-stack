@@ -81,7 +81,7 @@ PACKS = [
     StackPack(
         title="Next.js",
         description="A simple Next.js app. Best for starting from scratch with minimal components.",
-        from_registry="ghcr.io/sshh12/spark-stack-pack-nextjs-vanilla:latest",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-vanilla:latest",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_NEXT_JS_CMD,
         prompt="""
@@ -118,7 +118,7 @@ Coding Tips:
     StackPack(
         title="Next.js Shadcn",
         description="A Next.js app with Shadcn. Best for building a modern web app with a clean UI.",
-        from_registry="ghcr.io/sshh12/spark-stack-pack-nextjs-shadcn@sha256:243aeb37ac9f4a243a2dce849c73997c8ced1ca0363e16a124f7364b0f985242",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-shadcn@sha256:243aeb37ac9f4a243a2dce849c73997c8ced1ca0363e16a124f7364b0f985242",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_NEXT_JS_CMD,
         prompt="""
@@ -159,7 +159,7 @@ Coding Tips:
     StackPack(
         title="p5.js",
         description="A simple app with p5.js. Best for generative art, games, and simulations.",
-        from_registry="ghcr.io/sshh12/spark-stack-pack-nextjs-p5:latest",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-p5:latest",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_NEXT_JS_CMD,
         prompt="""
@@ -232,7 +232,7 @@ class Ball {
     StackPack(
         title="Pixi.js",
         description="A app with Pixi.js. Best for games and animations.",
-        from_registry="ghcr.io/sshh12/spark-stack-pack-nextjs-pixi:latest",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-pixi:latest",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_NEXT_JS_CMD,
         prompt="""
@@ -278,7 +278,7 @@ import { Application, Assets, Graphics, MeshRope, Point } from 'pixi.js';
     StackPack(
         title="Angular",
         description="A simple Angular app. Best for starting from scratch with Angular and minimal components.",
-        from_registry="ghcr.io/sshh12/spark-stack-pack-angular-vanilla:latest",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-angular-vanilla:latest",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_ANGULAR_CMD,
         prompt="""

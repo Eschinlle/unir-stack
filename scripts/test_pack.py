@@ -21,7 +21,7 @@ from backend.sandbox.sandbox import app
 TEST_PACK = StackPack(
     title="Test",
     description="Test",
-    from_registry="ghcr.io/sshh12/prompt-stack-pack-angular-vanilla@sha256:46a870b62a584712f90749a3adcc9c4496437d2d7130991cee1030eea42bd46c",
+    from_registry="ghcr.io/eschinlle/unir-stack-pack-angular-vanilla",
     sandbox_init_cmd=_SETUP_COMMON_CMD,
     sandbox_start_cmd=_START_ANGULAR_CMD,
     prompt="",
