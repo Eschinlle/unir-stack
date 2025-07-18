@@ -63,7 +63,7 @@ RUN_STACK_SYNC_ON_START = _bool_env("RUN_STACK_SYNC_ON_START", default=True)
 PROJECTS_SET_NEVER_CLEANUP = _bool_env("PROJECTS_SET_NEVER_CLEANUP", default=False)
 PROJECT_RESOURCE_TIMEOUT_SECONDS = _int_env("PROJECT_RESOURCE_TIMEOUT_SECONDS", 60 * 30)
 TARGET_PREPARED_SANDBOXES_PER_STACK = _int_env("TARGET_PREPARED_SANDBOXES_PER_STACK", 3)
-FRONTEND_URL = os.getenv("FRONTEND_URL", "https://sparkstack.app")
+FRONTEND_URL = os.getenv("FRONTEND_URL", "https://unirstack.app")
 
 # Credits configuration
 CREDITS_DEFAULT = _int_env("CREDITS_DEFAULT", 0)
@@ -79,5 +79,5 @@ STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET")
 
 # Email configuration
 POSTMARK_API_KEY = os.environ.get("POSTMARK_API_KEY")
-EMAIL_FROM = os.environ.get("EMAIL_FROM", "no-reply@sparkstack.app")
+EMAIL_FROM = os.environ.get("EMAIL_FROM", "no-reply@unirstack.app")
 EMAIL_LOGIN_JWT_EXPIRATION_DAYS = _int_env("EMAIL_LOGIN_JWT_EXPIRATION_DAYS", 1)

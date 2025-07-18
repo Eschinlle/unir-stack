@@ -12,17 +12,17 @@ If you need to build a map, use react-leaflet.
     "placeholder_images": """
 # Placeholder Images
 
-If you need placeholder images, use sparkstack.app's mock image API.
+If you need placeholder images, use unirstack.app's mock image API.
 
 ## Usage
-Base URL: https://sparkstack.app/api/mocks/images
+Base URL: https://unirstack.app/api/mocks/images
 
 ### Optional Query Parameters
 - orientation=landscape - Set image orientation
 - query=topic - Filter images by topic/category
 
 ### Example
-`https://sparkstack.app/api/mocks/images?orientation=landscape&query=nature`
+`https://unirstack.app/api/mocks/images?orientation=landscape&query=nature`
 
 The API will redirect to a random image matching your criteria.
 """.strip(),

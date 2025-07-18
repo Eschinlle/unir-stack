@@ -21,12 +21,12 @@ export default function AuthPage() {
       typeof window !== 'undefined' &&
       window.location.hostname === 'prompt-stack.sshh.io'
     ) {
-      window.location.href = 'https://sparkstack.app';
+      window.location.href = 'https://unirstack.app';
     }
   }, []);
 
   const generateTempEmail = (username) => {
-    return `${username}@sparkstack.app`;
+    return `${username}@unirstack.app`;
   };
 
   const isValidEmail = (email) => {
@@ -108,7 +108,7 @@ export default function AuthPage() {
     <div className="flex items-center justify-center min-h-screen bg-background">
       <div className="w-full max-w-md space-y-6 p-6">
         <div className="space-y-2 text-center">
-          <h1 className="text-3xl font-bold">Spark Stack</h1>
+          <h1 className="text-3xl font-bold">Unir Stack</h1>
           <p className="text-muted-foreground">
             Enter your email to start building. This tool is experimental and
             projects may be deleted without notice.

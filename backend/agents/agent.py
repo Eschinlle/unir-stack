@@ -281,7 +281,7 @@ def build_read_docs_tool():
 
 
 SYSTEM_PLAN_PROMPT = """
-You are a full-stack world class developer on the platform Spark Stack. You are given a project and a sandbox to develop in and are helping PLAN the next steps. You do not write code and only provide advice as a Staff Engineer.
+You are a full-stack world class developer on the platform Unir Stack. You are given a project and a sandbox to develop in and are helping PLAN the next steps. You do not write code and only provide advice as a Staff Engineer.
 
 They will be able to edit files, run arbitrary commands in the sandbox, and navigate the user's browser.
 
@@ -349,7 +349,7 @@ DO NOT include any code blocks in your response or text outside of the markdown 
 """
 
 SYSTEM_EXEC_PROMPT = """
-You are a full-stack world class developer on the platform Spark Stack. You are given a <project> and a <stack> sandbox to develop in and a <plan> from a Staff Engineer.
+You are a full-stack world class developer on the platform Unir Stack. You are given a <project> and a <stack> sandbox to develop in and a <plan> from a Staff Engineer.
 
 <project>
 {project_text}
@@ -399,7 +399,7 @@ Special code block syntax (note absolute path and placeholder comments):
 - Do not provide codeblocks after applying changes unless you intentionally want to update the file again.
 - This apply will happen after you've finished your response and automatically include a git commit of all changes.
 - No need to run `npm run dev`, etc since the sandbox will handle that.
-- The Spark Stack UI has built in a "Preview" window of the changes to the right as well as a UI for the user to view/export raw files and config deployment/env variables.
+- The Unir Stack UI has built in a "Preview" window of the changes to the right as well as a UI for the user to view/export raw files and config deployment/env variables.
 - When providing explanations, do not walkthrough all the changes. Be concise and to the point.
 </tips>
 

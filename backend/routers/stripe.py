@@ -19,7 +19,7 @@ CREDITS_PER_PURCHASE = 300
 async def on_session_completed(session: stripe.checkout.Session, db: Session):
     """Handle successful checkout session completion"""
     try:
-        if "sparkstack" not in session.client_reference_id:
+        if "unirstack" not in session.client_reference_id:
             print(f"stripe: Invalid client reference id: {session.client_reference_id}")
             return
 

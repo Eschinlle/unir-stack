@@ -30,8 +30,8 @@ if [ -f /app/frontend/package.json ]; then
     ls -l /app/frontend
 fi
 
-git config --global user.email 'bot@sparkstack.app'
-git config --global user.name 'Spark Stack Bot'
+git config --global user.email 'bot@unirstack.app'
+git config --global user.name 'Unir Stack Bot'
 git config --global init.defaultBranch main
 if [ ! -d ".git" ]; then
     git init

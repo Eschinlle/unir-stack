@@ -36,7 +36,7 @@ def send_login_link(email: str) -> None:
     """
 
     text_content = f"Hello!\n\nHere's your link: {login_link}"
-    _send_email(email, "Spark Stack Login Link", html_content, text_content)
+    _send_email(email, "Unir Stack Login Link", html_content, text_content)
 
 
 def _send_email(

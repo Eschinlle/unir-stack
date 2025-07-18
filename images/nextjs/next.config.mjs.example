@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'sparkstack.app',
+        hostname: 'unirstack.app',
         pathname: '/api/mocks/images/**',
       },
       {

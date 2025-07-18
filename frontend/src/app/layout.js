@@ -12,7 +12,7 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Spark Stack - AI-Powered App and Game Builder',
+  title: 'Unir Stack - AI-Powered App and Game Builder',
   description:
     'Build full stack apps and games in seconds using AI. Subscriptionless alternative to v0.dev and bolt.new.',
   manifest: '/manifest.json',
@@ -24,18 +24,18 @@ export const metadata = {
     'claude sonnet app builder',
   ],
   openGraph: {
-    title: 'Spark Stack',
+    title: 'Unir Stack',
     description:
       'Build full stack apps and games in seconds using AI. Subscriptionless alternative to v0.dev and bolt.new.',
-    url: 'https://sparkstack.app',
-    siteName: 'Spark Stack',
+    url: 'https://unirstack.app',
+    siteName: 'Unir Stack',
     images: [],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Spark Stack',
+    title: 'Unir Stack',
     description:
       'Build full stack apps and games in seconds using AI. Subscriptionless alternative to v0.dev and bolt.new.',
     images: [],

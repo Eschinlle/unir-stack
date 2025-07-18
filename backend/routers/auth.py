@@ -59,7 +59,7 @@ async def create_user(user: UserCreate, db: Session = Depends(get_db)):
     # Check if email is already taken
     existing_email = db.query(User).filter(User.email == user.email).first()
     if existing_email:
-        if user.email.endswith("sparkstack.app"):
+        if user.email.endswith("unirstack.app"):
             raise HTTPException(
                 status_code=409,
                 detail="Logging into temporary accounts is not supported.",
