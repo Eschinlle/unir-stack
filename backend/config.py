@@ -33,7 +33,7 @@ DB_POOL_RECYCLE = _int_env("DB_POOL_RECYCLE", 1800)  # 30 minutes in seconds
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
-BUCKET_NAME = os.environ.get("BUCKET_NAME", "prompt-stack")
+BUCKET_NAME = os.environ.get("BUCKET_NAME", "unir-stack")
 
 # Secrets configuration
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", secrets.token_urlsafe(32))

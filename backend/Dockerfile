@@ -8,7 +8,8 @@ RUN npm install --force
 
 COPY frontend/ .
 
-ENV NEXT_PUBLIC_API_URL=https://sparkstack.app
+#ENV NEXT_PUBLIC_API_URL=https://unirstack.app
+ENV NEXT_PUBLIC_API_URL=http://localhost:8000
 
 RUN npm run build
 
