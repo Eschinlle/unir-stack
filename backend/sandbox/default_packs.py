@@ -118,7 +118,7 @@ Coding Tips:
     StackPack(
         title="Next.js Shadcn",
         description="A Next.js app with Shadcn. Best for building a modern web app with a clean UI.",
-        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-shadcn@sha256:243aeb37ac9f4a243a2dce849c73997c8ced1ca0363e16a124f7364b0f985242",
+        from_registry="ghcr.io/eschinlle/unir-stack-pack-nextjs-shadcn:latest",
         sandbox_init_cmd=_SETUP_COMMON_CMD,
         sandbox_start_cmd=_START_NEXT_JS_CMD,
         prompt="""

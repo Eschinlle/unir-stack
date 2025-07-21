@@ -5,3 +5,5 @@ backend/.env
 venv/
 backend/venv/
 frontend/node_modules/
+backend/test
+backend/unirstack
