@@ -7,3 +7,4 @@ backend/venv/
 frontend/node_modules/
 backend/test
 backend/unirstack
+docker-compose.yml

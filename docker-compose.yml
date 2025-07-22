@@ -1,0 +1,83 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: unirstack-postgres
+    environment:
+      POSTGRES_USER: sparkstack
+      POSTGRES_PASSWORD: sparkstack123
+      POSTGRES_DB: sparkstack
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sparkstack -d sparkstack"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - unirstack-network
+
+  # Backend - FastAPI
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: unirstack-backend
+    environment:
+      DATABASE_URL: 
+      AWS_ACCESS_KEY_ID: 
+      AWS_SECRET_ACCESS_KEY: 
+      AWS_REGION: 
+      BUCKET_NAME: 
+      MODAL_TOKEN_ID: 
+      MODAL_TOKEN_SECRET: 
+      JWT_SECRET_KEY: 
+      OPENAI_API_KEY: 
+      ANTHROPIC_API_KEY: 
+      MODAL_APP_NAME: 
+      UNSPLASH_ACCESS_KEY: 
+      POSTMARK_API_KEY: 
+      FRONTEND_URL: 
+      RUN_PERIODIC_CLEANUP: 
+      TARGET_PREPARED_SANDBOXES_PER_STACK: 
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: python main.py
+    networks:
+      - unirstack-network
+
+  # Frontend - Next.js
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: unirstack-frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    command: npm run dev
+    networks:
+      - unirstack-network
+
+volumes:
+  postgres_data:
+
+networks:
+  unirstack-network:
+    driver: bridge
